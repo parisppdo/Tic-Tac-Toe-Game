@@ -15,7 +15,7 @@ class Fdemo extends Frame implements ActionListener {
     // Labeling the buttons
     int a = 0; // 0 or X
     int z = 0, z1 = 0, z2 = 0, z3 = 0, z4 = 0, z5 = 0, z6 = 0, z7 = 0, z8 = 0; // z is monitoring or preventing the alteration of buttons
-
+    int l = 70;  // the height of the message
     // creating the constructor
     Fdemo() {
 
@@ -84,7 +84,7 @@ class Fdemo extends Frame implements ActionListener {
             }
         }
 
-        //Second Button
+        // Second Button
         if (e.getSource() == b[1] && z1 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
@@ -201,6 +201,166 @@ class Fdemo extends Frame implements ActionListener {
                 b[8].setLabel("X");
                 z8++;
                 a++;
+            }
+        }
+
+        // Winning conditions
+
+        Font f = new Font("", Font.BOLD,20);
+
+
+        // Row conditions
+        if (b[0].getLabel() == b[1].getLabel() && b[0].getLabel() == b[2].getLabel()) {
+            if (b[0].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[0].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        else if (b[3].getLabel() == b[4].getLabel() && b[3].getLabel() == b[5].getLabel()) {
+            if (b[3].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[3].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        else if (b[6].getLabel() == b[7].getLabel() && b[6].getLabel() == b[8].getLabel()) {
+            if (b[6].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[6].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        // Column conditions
+        else if (b[0].getLabel() == b[3].getLabel() && b[0].getLabel() == b[2].getLabel()) {
+            if (b[0].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[0].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        else if (b[1].getLabel() == b[4].getLabel() && b[6].getLabel() == b[7].getLabel()) {
+            if (b[1].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[1].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        else if (b[2].getLabel() == b[5].getLabel() && b[2].getLabel() == b[8].getLabel()) {
+            if (b[2].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[2].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        // Diagonal conditions
+        else if (b[0].getLabel() == b[4].getLabel() && b[0].getLabel() == b[8].getLabel()) {
+            if (b[0].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[0].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+        }
+
+        else if (b[2].getLabel() == b[4].getLabel() && b[2].getLabel() == b[6].getLabel()) {
+            if (b[2].getLabel() == "0") {
+                Label p1 = new Label("Player 1 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
+            }
+            if (b[2].getLabel() == "X") {
+                Label p1 = new Label("Player 2 wins");
+                p1.setSize(150,50);
+                p1.setLocation(320,l);
+                p1.setFont(f);
+                add(p1);
+                l += 50;
             }
         }
     }
