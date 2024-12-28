@@ -16,7 +16,7 @@ class Fdemo extends Frame implements ActionListener {
     int a = 0; // 0 or X
     int z = 0, z1 = 0, z2 = 0, z3 = 0, z4 = 0, z5 = 0, z6 = 0, z7 = 0, z8 = 0; // z is monitoring or preventing the alteration of buttons
     int l = 70;  // the height of the message
-    // creating the constructor
+
     Fdemo() {
 
         setLayout(null);	// no predifined layouts
@@ -26,6 +26,7 @@ class Fdemo extends Frame implements ActionListener {
         setBackground(Color.white);
         setForeground(Color.black);
 
+        // Creating the buttons
         for (int i=1; i<=3; i++) {
             for (int j=1; j<=3; j++) {
                 b[k] = new Button();
@@ -124,7 +125,7 @@ class Fdemo extends Frame implements ActionListener {
             }
             else {
                 b[3].setLabel("X");
-                z++;
+                z3++;
                 a++;
             }
         }
