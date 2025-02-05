@@ -91,7 +91,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[0]) && z == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[0].setLabel("0");
+                b[0].setLabel("Ο");
                 z++;
                 a++;
             } else {
@@ -105,7 +105,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[1]) && z1 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[1].setLabel("0");
+                b[1].setLabel("Ο");
                 z1++;
                 a++;
             } else {
@@ -119,7 +119,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[2]) && z2 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[2].setLabel("0");
+                b[2].setLabel("Ο");
                 z2++;
                 a++;
             } else {
@@ -133,7 +133,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[3]) && z3 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[3].setLabel("0");
+                b[3].setLabel("Ο");
                 z3++;
                 a++;
             } else {
@@ -147,7 +147,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[4]) && z4 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[4].setLabel("0");
+                b[4].setLabel("Ο");
                 z4++;
                 a++;
             } else {
@@ -161,7 +161,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[5]) && z5 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[5].setLabel("0");
+                b[5].setLabel("Ο");
                 z5++;
                 a++;
             } else {
@@ -175,7 +175,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[6]) && z6 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[6].setLabel("0");
+                b[6].setLabel("Ο");
                 z6++;
                 a++;
             } else {
@@ -189,7 +189,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[7]) && z7 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[7].setLabel("0");
+                b[7].setLabel("Ο");
                 z7++;
                 a++;
             } else {
@@ -203,7 +203,7 @@ class Fdemo extends Frame implements ActionListener {
         if (e.getSource().equals(b[8]) && z8 == 0) {
             // if a is an even number, the button label is 0
             if (a % 2 == 0) {
-                b[8].setLabel("0");
+                b[8].setLabel("Ο");
                 z8++;
                 a++;
             } else {
@@ -220,7 +220,7 @@ class Fdemo extends Frame implements ActionListener {
 
         // Row conditions
         if (b[0].getLabel().equals(b[1].getLabel()) && b[0].getLabel().equals(b[2].getLabel())) {
-            if (b[0].getLabel().equals("0")) {
+            if (b[0].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -239,7 +239,7 @@ class Fdemo extends Frame implements ActionListener {
         }
 
         if (b[3].getLabel().equals(b[4].getLabel()) && b[3].getLabel().equals(b[5].getLabel())) {
-            if (b[3].getLabel().equals("0")) {
+            if (b[3].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -258,7 +258,7 @@ class Fdemo extends Frame implements ActionListener {
         }
 
         if (b[6].getLabel().equals(b[7].getLabel()) && b[6].getLabel().equals(b[8].getLabel())) {
-            if (b[6].getLabel().equals("0")) {
+            if (b[6].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -278,7 +278,7 @@ class Fdemo extends Frame implements ActionListener {
 
         // Column conditions
         if (b[0].getLabel().equals(b[3].getLabel()) && b[0].getLabel().equals(b[6].getLabel())) {
-            if (b[0].getLabel().equals("0")) {
+            if (b[0].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -297,7 +297,7 @@ class Fdemo extends Frame implements ActionListener {
         }
 
         if (b[1].getLabel().equals(b[4].getLabel()) && b[1].getLabel().equals(b[7].getLabel())) {
-            if (b[1].getLabel().equals("0")) {
+            if (b[1].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -316,7 +316,7 @@ class Fdemo extends Frame implements ActionListener {
         }
 
         if (b[2].getLabel().equals(b[5].getLabel()) && b[2].getLabel().equals(b[8].getLabel())) {
-            if (b[2].getLabel().equals("0")) {
+            if (b[2].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -336,7 +336,7 @@ class Fdemo extends Frame implements ActionListener {
 
         // Diagonal conditions
         if (b[0].getLabel().equals(b[4].getLabel()) && b[0].getLabel().equals(b[8].getLabel())) {
-            if (b[0].getLabel().equals("0")) {
+            if (b[0].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
@@ -355,7 +355,7 @@ class Fdemo extends Frame implements ActionListener {
         }
 
         if (b[2].getLabel().equals(b[4].getLabel()) && b[2].getLabel().equals(b[6].getLabel())) {
-            if (b[2].getLabel().equals("0")) {
+            if (b[2].getLabel().equals("Ο")) {
                 Label p1 = new Label("Player 1 wins");
                 p1.setSize(150, 50);
                 p1.setLocation(320, l);
