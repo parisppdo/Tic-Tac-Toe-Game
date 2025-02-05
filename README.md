@@ -16,7 +16,7 @@ A simple command-line Tic-Tac-Toe game implemented in Java. This application all
    ```
 2. **Compile the Application**:
    ```bash
-   cd Tic-Tac-Toe-Game/src
+   cd Tic-Tac-Toe-Game/src # Navigate to the proper directory
    javac tictactoe.java
    java tictactoe
    ```
